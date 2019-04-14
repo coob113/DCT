@@ -1,16 +1,57 @@
 var data={ "notes": [
   {
-    "title": "Carrying the Fire",
+    "title": "images/male_01.png",
     "author": 'Michael Collins',
-    "quote": "Man has always gone where he has been able to go. It&rsquo;s that simple. He will continue pushing back his frontier, no matter how far it may carry him from his homeland."
+    "quote": "Were there any difficulties you encountered in your team while working on it?"
   },
   {
-    "title" : "Kitchen Confidential",
-    "author": "<a href=\"http://jessica-eldredge.com\">jessabean</a>",
-    "quote": "Bigfoot understood that there are two types of people in this world: those who do what they say they&rsquo;re going to do&mdash;and everyone else."
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "Are you sure that colours of buttons are right?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "What was user feedback about this solution?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "Why did you use this layout?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "Isn't there any difference between this design and wireframes that we discussed before?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "What were the different ways you explored design for a specific component on the page?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "What are the different workflows you explored in your project?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "Don't be defensive. OK?"
+  },
+  {
+    "title" : "images/female_01.png",
+    "author": "Name Surname",
+    "quote": "What was improved since the last review?"
   }
  ]
 };
+
+
+
+
+
+    
 
 function randomize() {
   var range = data.notes.length;
@@ -18,8 +59,8 @@ function randomize() {
   var item = data.notes[random_index];
   
   $('.quote-content').html(item.quote); 
-  $('.quote-book').html(item.title);
   $('.quote-author').html(item.author);
+    $(".author-photo").attr("src", item.title);
 }
 
 function getQuote() {
