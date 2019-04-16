@@ -1800,3 +1800,9 @@ textarea.w-select {
 .w-condition-invisible {
   display: none !important;
 }
+.booth {
+    width:400px;
+    background:#ccc;
+    border:10px solid #ddd;
+    margin:0 auto;
+}
